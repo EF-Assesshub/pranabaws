@@ -25,5 +25,5 @@ jobs:
           aws-region: ap-south-1
 
       - name: Run AWS CLI commands
-        run: aws s3 ls
+        run: aws s3 ls s3://pranab.s3bucket
 
