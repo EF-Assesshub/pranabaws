@@ -1,5 +1,4 @@
 
-
 name: AWS CLI Action
 
 on:
@@ -24,6 +23,7 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: ap-south-1
 
-      - name: Run AWS CLI commands
-        run: aws s3 ls s3://pranab.s3bucket
+      - name: Upload file to S3
+        run: aws s3 cp path/to/your/file s3://pranab.s3bucket/dish
+
 
